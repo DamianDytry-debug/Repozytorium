@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ucz się teleinformatyki: sieci komputerowe, Linux, Windows Server i powtórki do egzaminów zawodowych.">
+  <title>PacketLab — ucz się teleinformatyki</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Przejdź do treści</a>
+<header class="header">
+  <a class="logo" href="#"><span class="logo-icon" aria-hidden="true">▧</span> Packet<span>Lab</span><span class="logo-dot">.</span></a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Otwórz menu">☰</button>
+  <nav id="navigation" aria-label="Menu główne">
+    <a href="#sciezki">Ścieżki nauki</a><a href="#laboratorium">Laboratorium</a><a href="#egzaminy">Egzaminy</a><a class="nav-cta" href="#sciezki">Zacznij naukę <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
+<main id="main">
+<section class="hero wrap">
+  <div class="hero-copy"><div class="eyebrow"><span class="status-dot"></span> TWOJA PRZYSZŁOŚĆ ZACZYNA SIĘ W SIECI</div>
+    <h1>Połącz wiedzę.<br>Zbuduj <span>umiejętności.</span></h1>
+    <p>Od pierwszego pakietu do własnego serwera. Poznaj teleinformatykę w praktyce — krok po kroku, we własnym tempie.</p>
+    <div class="hero-actions"><a class="button primary" href="#sciezki">Odkryj ścieżki nauki <span aria-hidden="true">↗</span></a><a class="text-link" href="#egzaminy">Sprawdź swoją wiedzę <span aria-hidden="true">→</span></a></div>
+    <div class="hero-notes"><span>✓ Bezpłatne materiały</span><span>✓ Nauka przez praktykę</span><span>✓ Bez rejestracji</span></div>
+  </div>
+  <div class="hero-art" aria-label="Ilustracja połączenia komputera z serwerem">
+    <div class="art-grid"></div><span class="art-label">SYSTEM ONLINE <i></i></span>
+    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+    <div class="server"><div class="server-top">PL / CORE</div><div class="server-row"><b></b><b></b><span>•••</span></div><div class="server-row"><b></b><b></b><span>•••</span></div><div class="server-row"><b></b><b></b><span>•••</span></div><div class="server-bottom">↔ &nbsp; 1 Gbps</div></div>
+    <div class="terminal-mini"><span>● ● ●</span><code><em>$</em> ping twoja-przyszlosc<br><small>64 bytes: czas=1ms<br>Połączenie nawiązane.</small><br><em>▌</em></code></div>
+    <div class="floating-tag tag-top">⌘ <span>Wiedza → praktyka</span></div><div class="floating-tag tag-bottom"><span class="status-dot"></span> Gotowy na kolejny poziom?</div>
+    <span class="art-coordinate">52°13′ N &nbsp; / &nbsp; CONNECTED</span>
+  </div>
+</section>
+<div class="topics-strip"><div class="wrap"><span>TWÓJ ZESTAW UMIEJĘTNOŚCI</span><b>TCP/IP</b><b>Linux</b><b>Windows Server</b><b>DNS & DHCP</b><b>Bezpieczeństwo</b><span aria-hidden="true">✳</span></div></div>
+<section id="sciezki" class="section wrap">
+  <div class="section-head"><div><div class="eyebrow">01 / WYBIERZ KIERUNEK</div><h2>Małe kroki. Duże możliwości.</h2><p>Wybierz temat i zacznij budować solidne podstawy.</p></div><span class="section-note">Trzy ścieżki. Jeden cel — rozwój. ↙</span></div>
+  <div class="learning-tools"><div><label for="course-search">Znajdź swój kolejny temat</label><input id="course-search" type="search" placeholder="Szukaj: Linux, DNS, uprawnienia…" aria-describedby="search-status"></div><div class="progress-box"><label for="learning-progress" id="progress-label">Twoje postępy: 0 z 3 ścieżek</label><progress id="learning-progress" max="3" value="0"></progress></div></div>
+  <p id="search-status" class="search-status" role="status"></p>
+  <div class="cards">
+    <article class="course"><div class="card-top"><span class="course-icon green" aria-hidden="true">⌘</span><span class="badge">PODSTAWY</span></div><h3>Sieci komputerowe</h3><p>Zrozum, jak urządzenia wymieniają dane. Od adresu IP do konfiguracji własnej sieci.</p><ul><li>Modele OSI i TCP/IP</li><li>Adresacja IPv4 i podsieci</li><li>Routing, DNS i DHCP</li></ul><button class="course-link" data-course="networks">Poznaj sieci <span>↗</span></button></article>
+    <article class="course"><div class="card-top"><span class="course-icon purple" aria-hidden="true">&gt;_</span><span class="badge">SYSTEMY</span></div><h3>Linux</h3><p>Przejmij kontrolę nad terminalem. Zarządzaj plikami, uprawnieniami i usługami.</p><ul><li>Terminal i podstawowe polecenia</li><li>Użytkownicy i uprawnienia</li><li>Usługi i administracja</li></ul><button class="course-link" data-course="linux">Odkryj Linuxa <span>↗</span></button></article>
+    <article class="course"><div class="card-top"><span class="course-icon blue" aria-hidden="true">⊞</span><span class="badge">ADMINISTRACJA</span></div><h3>Windows Server</h3><p>Zbuduj fundament infrastruktury firmowej i poznaj codzienną pracę administratora.</p><ul><li>Active Directory i domeny</li><li>Zasady grupy GPO</li><li>Usługi sieciowe i udziały</li></ul><button class="course-link" data-course="windows">Poznaj Windows Server <span>↗</span></button></article>
+  </div>
+  <div id="lesson" class="lesson" hidden tabindex="-1"><div class="lesson-heading"><h3 id="lesson-title"></h3><button id="close-lesson" aria-label="Zamknij materiał">✕</button></div><div id="lesson-body"></div><button id="complete-lesson" class="button primary" type="button">Oznacz jako opanowane ✓</button><p id="save-status" class="fine-print" role="status"></p></div>
+</section>
+<section id="laboratorium" class="lab-section"><div class="wrap lab-layout"><div><div class="eyebrow">02 / SPRAWDŹ W PRAKTYCE</div><h2>Teoria to początek.<br>Teraz Twój ruch.</h2><p>Przećwicz podstawowe polecenia w bezpiecznym symulatorze terminala. Wpisz <code>help</code>, aby zobaczyć dostępne komendy.</p><div class="lab-tip"><span aria-hidden="true">↳</span><span>Mały eksperyment, duże zrozumienie.<br><strong>Tu możesz spokojnie popełniać błędy.</strong></span></div></div><div class="terminal"><div class="terminal-bar"><span class="traffic"><i></i><i></i><i></i></span><span>student@packetlab: ~</span><span>bash</span></div><div class="terminal-content"><p class="terminal-welcome">PacketLab Terminal v1.0<br><span>Symulator edukacyjny · wpisz help, aby zacząć</span></p><div id="terminal-output" role="log" aria-live="polite"></div><form id="terminal-form"><label for="terminal-input">student@lab:~$</label><input id="terminal-input" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Polecenie terminala" placeholder="help"><button type="submit" aria-label="Wykonaj polecenie">↵</button></form></div></div></div></section>
+<section id="egzaminy" class="section wrap"><div class="exam-layout"><div><div class="eyebrow">03 / PRZYGOTUJ SIĘ NA WIĘCEJ</div><h2>Na egzamin.<br>I na to, co po nim.</h2><p>Powtórz zagadnienia przydatne podczas przygotowań do kwalifikacji INF.02 i INF.07. Sprawdź podstawy w krótkim quizie.</p><div class="exam-tags"><span>INF.02</span><span>INF.07</span><span>Test wiedzy</span></div><p class="fine-print">Autorskie materiały do nauki, nie oficjalne arkusze CKE. Aktualny zakres i wymagania egzaminacyjne sprawdzaj na stronie CKE.</p><a class="text-link" href="https://cke.gov.pl/egzamin-zawodowy/" target="_blank" rel="noopener noreferrer">Informacje o egzaminach CKE ↗</a></div><div class="quiz"><div class="quiz-meta"><span>SPRAWDŹ SIĘ</span><span id="quiz-progress"></span></div><h3 id="quiz-question"></h3><div id="quiz-answers"></div><p id="quiz-feedback" role="status"></p><button class="button primary" id="quiz-next" hidden>Następne pytanie →</button></div></div></section>
+<section class="closing wrap"><span aria-hidden="true">✳</span><div><h2>Każdy ekspert zaczynał od podstaw.</h2><p>Twój pierwszy krok jest bliżej, niż myślisz.</p></div><a class="button dark" href="#sciezki">Zacznij dzisiaj ↗</a></section>
+</main>
+<footer class="wrap"><a class="logo" href="#">Packet<span>Lab</span>.</a><p>Wiedza, która łączy.</p><span>© <span id="year"></span> PacketLab · Projekt edukacyjny</span><a href="#main">Wróć na górę ↑</a></footer>
+</body>
+</html>
